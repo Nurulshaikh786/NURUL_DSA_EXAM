@@ -1,3 +1,4 @@
+//start
 // Linked list
 // include functions
 #include <iostream>
@@ -198,7 +199,7 @@ int main(){
 
     //create do while loop
     do {
-
+        //create menu
         cout << "\n========== Link List ===========\n";
         cout << "1. Insert at front\n" ;
         cout << "2. Insert at end\n" ;
@@ -217,42 +218,43 @@ int main(){
         int value, index;
         switch (choice) {
             case 1:
-                cout << "Enter value to insert at front: ";
+                cout << "Enter value to insert at front: ";    //calling inseratfront function
                 cin >> value;
                 list.insertAtFront(value);
                 break;
             case 2:
                 cout << "Enter value to insert at end: ";
                 cin >> value;
-                list.insertAtEnd(value);
+                list.insertAtEnd(value);                   //calling insert at en function
                 break;
             case 3:
-                cout << "Enter index: ";
+                cout << "Enter index: ";                 //calling insert at index function
                 cin >> index;
                 cout << "Enter value to insert: ";
                 cin >> value;
                 list.insertAtIndex(index, value);
                 break;
             case 4:
-                list.deleteAtFront();
+                list.deleteAtFront();                   //calling delete at front function
                 break;
             case 5:
-                list.DeleteAtEnd();
+                list.DeleteAtEnd();                 //calling delete at end function
                 break;
             case 6:
-                cout << "Enter index to delete: ";
+                cout << "Enter index to delete: ";      //calling delete at index function      
                 cin >> index;
                 list.deleteAtIndex(index);
                 break;
             case 7:
-                list.displayData();
+                list.displayData();                  //calling diplay fnction
                 break;
             case 0:
-                cout << "Exiting program. Thankyou!!!" << endl;
+                cout << "Exiting program. Thankyou!!!" << endl;        //exiting the program
                 break;
             default:
-                cout << "Invalid choice. Please try again." << endl;
+                cout << "Invalid choice. Please try again." << endl;    
         }
     } while (choice != 0);
-    return 0;
+    return 0; //return statments
 }
+//end
